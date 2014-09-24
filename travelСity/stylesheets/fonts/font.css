@@ -1,0 +1,11 @@
+@font-face {
+	font-family: 'ROCK';
+	src: url('./ROCK.eot');
+	src: local('ROCK'), url('./ROCK.woff') format('woff'), url('./ROCK.ttf') format('truetype');
+}
+/* use this class to attach this font to any element i.e. <p class="fontsforweb_fontid_7691">Text with this font applied</p> */
+.fontsforweb_fontid_7691 {
+	font-family: 'ROCK' !important;
+}
+
+/* Font downloaded from FontsForWeb.com */

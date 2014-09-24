@@ -1,0 +1,278 @@
+@font-face {
+    font-family: 'ROCK';
+    src: url('fonts/ROCK.eot');
+    src: local('ROCK'), url('fonts/ROCK.woff') format('woff'), url('fonts/ROCK.ttf') format('truetype');
+}
+
+body
+{
+    margin: 0;
+}
+
+img
+{
+    border: none;
+}
+
+.b-container
+{
+    background: url(../images/bg.png);
+    margin: 0 auto;
+    padding: 0 49px 118px 46px;
+    width: 928px;
+    font-family: ROCK, Arial;
+}
+
+.b-header__logo
+{
+    background: -moz-radial-gradient( center top,circle farthest-side,  #F4F3F2 28%, #ADA6A0 76%);
+    background: -webkit-radial-gradient( center top,circle farthest-side,  #F4F3F2 28%, #ADA6A0 76%);
+    background: -o-radial-gradient( center top,circle farthest-side,  #F4F3F2 28%, #ADA6A0 76%);
+    background: -ms-radial-gradient( center top,circle farthest-side,  #F4F3F2 28%, #ADA6A0 76%);
+    background: radial-gradient( center top,circle farthest-side,  #F4F3F2 28%, #ADA6A0 76%);
+}
+
+.b-logo
+{
+    color: #C4C2C1;
+    padding: 60px 0 17px;
+    font-family: Vani;
+    font-size: 88px;
+    text-align: center;
+    line-height: 58px;
+}
+
+.b-container__menubar, .b-container__slider, .b-articles__article, .b-container__content, .b-container__footer
+ {
+     background: #fff;
+     box-shadow: 0 0 4px rgba(89,89,89,0.75);
+ }
+
+.b-menu
+{
+    padding-left: 18px;
+    margin: 0;
+}
+
+.b-menu__item
+{
+    float: left;
+    list-style: none;
+}
+
+.b-menu__link
+{
+    color: #5B5B5B;
+    padding: 21px 32px 16px 32px;
+    font-size: 18px;
+    display: block;
+    text-decoration: none;
+}
+
+.b-menu__link:hover
+{
+    text-decoration: underline;
+}
+
+.b-search__textfield {
+    color: #E2E2E2;
+    background: #FAFAFA;
+    margin: 8px 13px 7px 0;
+    padding: 9px 16px;
+    width: 260px;
+    font-family: ROCK;
+    font-size: 18px;
+    border: 1px solid #EFEFEF;
+    border-top-width: 2px;
+    border-left-width: 2px;
+    float: right;
+}
+
+.b-search__image
+{
+    left: 380px;
+    top: 17px;
+    position: relative;
+}
+
+.b-slider
+{
+    margin: 15px 0 17px;
+    padding: 15px 12px 13px 11px;
+}
+
+.b-slider__buttons {
+    width: 906px;
+    top: 368px;
+    position: absolute;
+}
+
+.b-buttons__button
+{
+    background: url("../images/button.png") no-repeat;
+    width: 43px;
+    height: 48px;
+    cursor: pointer;
+}
+
+.b-buttons__button_prev
+{
+    margin-left: 15px;
+    float: left;
+}
+.b-buttons__button_next
+{
+    margin-right: 17px;
+    float: right;
+    transform: rotate(180deg);
+}
+
+.b-articles__article
+{
+    margin-right: 10px;
+    padding: 11px 12px 23px 11px;
+    min-height: 375px;
+    height: auto !important;
+    height: 375px;
+    width: 201px;
+    font-size: 12px;
+    text-align: justify;
+    float: left;
+}
+
+.b-articles__article:last-child
+{
+    margin-right: 0;
+}
+
+.b-article__description
+{
+    margin: 24px 0 30px;
+    text-indent: 36px;
+}
+
+.b-more
+{
+    color: #000;
+    font-size: 12px;
+    float: right;
+}
+
+.b-content
+{
+    margin: 16px 0 15px;
+    padding: 11px 14px 10px 11px;
+}
+
+.b-content__image
+{
+    float: left;
+}
+
+.b-content__info
+{
+    width: 675px;
+    float: right;
+}
+
+.b-content__header
+{
+    font-size: 17px;
+}
+
+.b-content__text
+{
+    color: #343433;
+    margin:  18px 0 0 2px;
+    font-size: 12px;
+    text-align: justify;
+    text-indent: 38px;
+}
+
+.b-container__footer
+{
+    padding: 22px 1px 20px 22px;
+}
+
+.b-footer-menu__item
+{
+    float: left;
+}
+
+.b-footer-menu__link
+{
+    color: #545454;
+    padding: 0 8px;
+    font-family: Calibri, Arial;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.b-footer-menu__link:hover
+{
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 480px)
+{
+
+    .b-container
+    {
+        max-width: 385px;
+    }
+
+    .b-logo
+    {
+        font-size: 82px;
+    }
+
+    .b-menu__link
+    {
+        padding-left: 4px;
+    }
+
+    .b-search__textfield
+    {
+        margin-right: 26px;
+        width: 300px;
+    }
+
+    .b-search__image
+    {
+        left: 326px;
+        top: -38px;
+    }
+
+    .b-slider
+    {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .b-slide__image
+    {
+        width: 100%;
+    }
+
+    .b-slider__buttons
+    {
+        width: 385px;
+    }
+
+    .b-articles__article
+    {
+        margin-bottom: 17px;
+        width: 362px;
+    }
+
+    .b-article__image
+    {
+        width: 100%;
+    }
+
+    .b-content
+    {
+        display: none;
+    }
+
+}
