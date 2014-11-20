@@ -4,6 +4,13 @@
         <meta charset="utf-8">
         <title>Travel city</title>
         <link rel="stylesheet" href="stylesheets/travel_city.css">
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+        <script type="text/javascript" src="scripts/slider.js"></script>
+        <script type="text/javascript">
+            $(function () {
+                new b_slider('.b-slider');
+            });
+        </script>
     </head>
     <body>
         <div class="b-container">
@@ -23,18 +30,36 @@
 
                     <nav class="b-menubar__menu">
                         <ul class="b-menu">
-                            <li class="b-menu__item b-menu__item_current"> <a href="#" class="b-menu__link">Home</a> </li>
-                            <li class="b-menu__item"> <a href="#" class="b-menu__link">Portfolio</a> </li>
-                            <li class="b-menu__item"> <a href="#" class="b-menu__link">Blog</a> </li>
-                            <li class="b-menu__item"> <a href="#" class="b-menu__link">Contact</a> </li>
+                            <li class="b-menu__item b-menu__item_current">
+                                <a href="#" class="b-menu__link">Home</a>
+                            </li>
+                            <li class="b-menu__item"><a href="#" class="b-menu__link">Portfolio</a>
+                                <ul class="b-submenu">
+                                    <li class="b-submenu__item"><a href="#" class="b-submenu__link">Lorem ipsum</a></li>
+                                    <li class="b-submenu__item"><a href="#" class="b-submenu__link">Dolor sit amet</a></li>
+                                    <li class="b-submenu__item"><a href="#" class="b-submenu__link">Duis autem</a></li>
+                                    <li class="b-submenu__item"><a href="#" class="b-submenu__link">Vel eum iriure</a></li>
+                                </ul>
+                            </li>
+                            <li class="b-menu__item"><a href="#" class="b-menu__link">Blog</a>
+                                <ul class="b-submenu">
+                                    <li class="b-submenu__item"><a href="#" class="b-submenu__link">Lorem ipsum</a></li>
+                                    <li class="b-submenu__item"><a href="#" class="b-submenu__link">Dolor sit amet</a></li>
+                                    <li class="b-submenu__item"><a href="#" class="b-submenu__link">Duis autem</a></li>
+                                    <li class="b-submenu__item"><a href="#" class="b-submenu__link">Vel eum iriure</a></li>
+                                </ul>
+                            </li>
+                            <li class="b-menu__item">
+                                <a href="#" class="b-menu__link">Contact</a>
+                            </li>
                         </ul>
                     </nav>
 
                     <div class="b-menubar__search">
-                                <form class="b-search" action="#">
-                                    <input type="text" autofocus placeholder="search" autocomplete="off" class="b-search__textfield">
-                                    <input type="image" alt="Найти" src="images/search.png" class="b-search__image">
-                                </form>
+                        <form class="b-search" action="#">
+                            <input type="text" autofocus placeholder="search" autocomplete="off" class="b-search__textfield">
+                            <input type="image" alt="Найти" src="images/search.png" class="b-search__image">
+                        </form>
                     </div>
 
                     <div style="clear: both;">
@@ -47,8 +72,14 @@
                 <div class="b-slider">
 
                     <div class="b-slider__slides">
-                        <div class="b-slide">
-                            <img src="images/slide.png" alt="City" class="b-slide__image">
+                        <div class="b-slide" id="b-slide">
+                            <img src="images/slide1.png" alt="City" class="b-slide__image">
+                            <img src="images/slide2.jpg" alt="City" class="b-slide__image">
+                            <img src="images/slide3.jpg" alt="City" class="b-slide__image">
+                            <img src="images/slide4.jpg" alt="City" class="b-slide__image">
+                            <img src="images/slide5.jpg" alt="City" class="b-slide__image">
+                            <img src="images/slide6.jpg" alt="City" class="b-slide__image">
+                            <img src="images/slide7.jpg" alt="City" class="b-slide__image">
                         </div>
                     </div>
 
@@ -74,7 +105,10 @@
                         <article class="b-article">
                             <img src="images/articleHouse.png" alt="House" class="b-article__image">
                             <p class="b-article__description">
-                            Lorem ipsum dolor sit amet, uer uer Duis autem vel eum iriure Duis autemvel eum iriure dolor. ipsum dolor sit amet, consectetuer Duis autem vel Lorem ipsum Lorem ipsum dolor sit amet, uer uer Duis autem vel eum iriure Duis autemvel eum iriure dolor. ipsum dolor sit amet, consectetuer
+                                Lorem ipsum dolor sit amet, uer uer Duis autem vel eum iriure Duis autemvel eum iriure
+                                dolor. ipsum dolor sit amet, consectetuer Duis autem vel Lorem ipsum Lorem ipsum dolor
+                                sit amet, uer uer Duis autem vel eum iriure Duis autemvel eum iriure dolor. ipsum dolor
+                                sit amet, consectetuer
                             </p>
                             <p class="b-article__more">
                                 <a href="#" class="b-more">more...</a>
@@ -86,7 +120,10 @@
                         <article class="b-article">
                             <img src="images/articleCar.png" alt="Car" class="b-article__image">
                             <p class="b-article__description">
-                            Lorem ipsum dolor sit amet, uer uer Duis autem vel eum iriure Duis autemvel eum iriure dolor. ipsum dolor sit amet, consectetuer Duis autem vel Lorem ipsum Lorem ipsum dolor sit amet, uer uer Duis autem vel eum iriure Duis autemvel eum iriure dolor. ipsum dolor sit amet, consectetuer
+                                Lorem ipsum dolor sit amet, uer uer Duis autem vel eum iriure Duis autemvel eum iriure
+                                dolor. ipsum dolor sit amet, consectetuer Duis autem vel Lorem ipsum Lorem ipsum dolor
+                                sit amet, uer uer Duis autem vel eum iriure Duis autemvel eum iriure dolor. ipsum dolor
+                                sit amet, consectetuer
                              </p>
                             <p class="b-article__more">
                                 <a href="#" class="b-more">more...</a>
@@ -98,7 +135,10 @@
                         <article class="b-article">
                             <img src="images/articleRoom.png" alt="Room" class="b-article__image">
                             <p class="b-article__description">
-                            Lorem ipsum dolor sit amet, uer uer Duis autem vel eum iriure Duis autemvel eum iriure dolor. ipsum dolor sit amet, consectetuer Duis autem vel Lorem ipsum Lorem ipsum dolor sit amet, uer uer Duis autem vel eum iriure Duis autemvel eum iriure dolor. ipsum dolor sit amet, consectetuer
+                                Lorem ipsum dolor sit amet, uer uer Duis autem vel eum iriure Duis autemvel eum iriure
+                                dolor. ipsum dolor sit amet, consectetuer Duis autem vel Lorem ipsum Lorem ipsum dolor
+                                sit amet, uer uer Duis autem vel eum iriure Duis autemvel eum iriure dolor. ipsum dolor
+                                sit amet, consectetuer
                             </p>
                             <p class="b-article__more">
                                 <a href="#" class="b-more">more...</a>
@@ -110,7 +150,10 @@
                         <article class="b-article">
                             <img src="images/articleNature.png" alt="Nature" class="b-article__image">
                             <p class="b-article__description">
-                            Lorem ipsum dolor sit amet, uer uer Duis autem vel eum iriure Duis autemvel eum iriure dolor. ipsum dolor sit amet, consectetuer Duis autem vel Lorem ipsum Lorem ipsum dolor sit amet, uer uer Duis autem vel eum iriure Duis autemvel eum iriure dolor. ipsum dolor sit amet, consectetuer
+                                Lorem ipsum dolor sit amet, uer uer Duis autem vel eum iriure Duis autemvel eum iriure
+                                dolor. ipsum dolor sit amet, consectetuer Duis autem vel Lorem ipsum Lorem ipsum dolor
+                                sit amet, uer uer Duis autem vel eum iriure Duis autemvel eum iriure dolor. ipsum dolor
+                                sit amet, consectetuer
                             </p>
                             <p class="b-article__more">
                                 <a href="#" class="b-more">more...</a>
@@ -132,7 +175,14 @@
                             Welcome to the site
                         </div>
                         <p class="b-content__text">
-                            Lorem ipsum dolor sit amet, uer uer Duis autem vel eum iriure Duis autemvel eum iriure dolor. ipsum dolor sit amet, consectetuer Duis autem vel Lorem ipsum Lorem ipsum dolor sit amet, uer uer Duis autem vel eum iriure Duis autemvel eum iriure dolor. ipsum dolor sit amet, consectetuer  Lorem ipsum dolor sit amet, uer uer Duis autem vel eum iriure Duis autemvel eum iriure dolor. ipsum dolor sit amet, consectetuer Duis autem vel Lorem ipsum Lorem ipsum dolor sit amet, uer uer Duis autem vel eum iriure Duis autemvel eum iriure dolor. ipsum dolor sit amet, consectetuer 	Lorem ipsum dolor sit amet, uer uer Duis autem vel eum iriure Duis autemvel eum iriure dolor. ipsum dolor sit amet, sectetuer.
+                            Lorem ipsum dolor sit amet, uer uer Duis autem vel eum iriure Duis autemvel eum iriure dolor.
+                            ipsum dolor sit amet, consectetuer Duis autem vel Lorem ipsum Lorem ipsum dolor sit amet,
+                            uer uer Duis autem vel eum iriure Duis autemvel eum iriure dolor. ipsum dolor sit amet,
+                            consectetuer  Lorem ipsum dolor sit amet, uer uer Duis autem vel eum iriure Duis autemvel
+                            eum iriure dolor. ipsum dolor sit amet, consectetuer Duis autem vel Lorem ipsum Lorem ipsum
+                            dolor sit amet, uer uer Duis autem vel eum iriure Duis autemvel eum iriure dolor.
+                            ipsum dolor sit amet, consectetuer 	Lorem ipsum dolor sit amet, uer uer Duis autem
+                            vel eum iriure Duis autemvel eum iriure dolor. ipsum dolor sit amet, sectetuer.
                         <p class="b-content__more">
                             <a href="#" class="b-more">more...</a>
                         </p>
